@@ -1,0 +1,34 @@
+//
+//  ZFCommon.swift
+//  DevFramework
+//
+//  Created by 志方 on 2018/2/8.
+//  Copyright © 2018年 志方. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+// MARK: - 应用程序信息
+let AppKey = ""
+let AppSecret = ""
+let RedirectURI = "http://www.baidu.com"
+
+let iphoneX = UIScreen.main.bounds.height > 800.0
+let kNavigationHeight = iphoneX ? 88 : 64
+let kContentHeight = UIScreen.main.bounds.height - CGFloat(kNavigationHeight)
+
+///用户需要登录通知
+let ZFUserShouldLoginNotification = "ZFUserShouldLoginNotification"
+///用户登录成功通知
+let ZFUserloginSuccessNotification = "ZFUserloginSuccessNotification"
+
+//MARK: - 微博配图视图常量
+/// 配图外侧的间距
+let ZFStatusPictureViewOutterMargin = CGFloat(12)
+///配图内部图像视图的间距
+let ZFStatusPictureViewInnerMargin = CGFloat(3)
+///视图的宽度
+let ZFStatusPictureViewWidth = UIScreen.main.bounds.width - 2 * ZFStatusPictureViewOutterMargin
+///每个item的宽度
+let ZFStatusPictureItemWidth = (ZFStatusPictureViewWidth - 2 * ZFStatusPictureViewInnerMargin) / 3
