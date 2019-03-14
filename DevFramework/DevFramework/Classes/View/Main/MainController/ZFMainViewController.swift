@@ -26,8 +26,11 @@ class ZFMainViewController: UITabBarController {
         ///设置代理
         delegate = self
         
-        ///注册通知
+        ///登陆通知
         NotificationCenter.default.addObserver(self, selector: #selector(userLogin), name: NSNotification.Name(rawValue: ZFUserShouldLoginNotification), object: nil)
+        //注册通知
+        NotificationCenter.default.addObserver(self, selector: #selector(userRegister), name: NSNotification.Name(rawValue: ZFUserShouldRegisterNotification), object: nil)
+        
     }
     
     deinit {
@@ -48,6 +51,17 @@ class ZFMainViewController: UITabBarController {
         DispatchQueue.main.asyncAfter(deadline: when) {
             SVProgressHUD.setDefaultMaskType(.clear)
             let vc = UINavigationController.init(rootViewController: ZFOAuthViewController())
+            self.present(vc, animated: true, completion: nil)
+        }
+        
+    }
+    
+    @objc private func userRegister(n: Notification) {
+        let when = DispatchTime.now()
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            SVProgressHUD.setDefaultMaskType(.clear)
+            let vc = ZFNavigationController(rootViewController: RXTableViewVC())
+            vc.navigationBar.isHidden = false
             self.present(vc, animated: true, completion: nil)
         }
         

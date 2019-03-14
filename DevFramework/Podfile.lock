@@ -14,32 +14,129 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DateTimePicker (2.1.3)
+  - Differentiator (3.0.2)
+  - FaceAware (1.6.0)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - JTAppleCalendar (7.1.7)
+  - PagingMenuController (2.2.0)
+  - Persei (3.1.1)
   - pop (1.0.9)
+  - Popover (1.2.2)
+  - Presentr (1.9)
+  - PreviewTransition (4.0.0)
+  - RSA01 (0.0.1)
+  - RxBlocking (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - RxTest (4.2.0):
+    - RxSwift (~> 4.0)
+  - SCLAlertView (0.8)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SVProgressHUD (2.1.2)
+  - SwiftMessages (6.0.2):
+    - SwiftMessages/App (= 6.0.2)
+  - SwiftMessages/App (6.0.2)
+  - TwicketSegmentedControl (0.1.2)
+  - XLActionController (4.1.1):
+    - XLActionController/Core (= 4.1.1)
+  - XLActionController/Core (4.1.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
+  - DateTimePicker (~> 2.1.3)
+  - FaceAware (~> 1.6.0)
   - FMDB
+  - JTAppleCalendar (~> 7.1.7)
+  - PagingMenuController (~> 2.2.0)
+  - Persei (~> 3.1.1)
   - pop
+  - Popover (~> 1.2.2)
+  - Presentr (~> 1.9)
+  - PreviewTransition (~> 4.0.0)
+  - RSA01 (from `/Users/zhangzhifang/RSA01`)
+  - RxBlocking (~> 4.0)
+  - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
+  - RxSwift (~> 4.2.0)
+  - RxTest (~> 4.0)
+  - SCLAlertView (~> 0.8)
   - SDWebImage
   - SVProgressHUD
+  - SwiftMessages (~> 6.0.2)
+  - TwicketSegmentedControl (~> 0.1.2)
+  - XLActionController (~> 4.1.1)
   - YYModel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - DateTimePicker
+    - Differentiator
+    - FaceAware
+    - FMDB
+    - JTAppleCalendar
+    - PagingMenuController
+    - Persei
+    - pop
+    - Popover
+    - Presentr
+    - PreviewTransition
+    - RxBlocking
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - RxTest
+    - SCLAlertView
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftMessages
+    - TwicketSegmentedControl
+    - XLActionController
+    - YYModel
+
+EXTERNAL SOURCES:
+  RSA01:
+    :path: "/Users/zhangzhifang/RSA01"
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DateTimePicker: 1d34181c5e9cd6a32ca87174fdf66c9710e483ef
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  FaceAware: 7708f7ac2e2521f101dd1462b351c5486eb0a590
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
+  PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
+  Persei: 6d36b54e40eccd437211548d3f897269c85d3a13
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Popover: 21e357f86d45c8d9e29a41a4adbca3664d6e511f
+  Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
+  PreviewTransition: 5495edbb67a5e041383ad1760e7f71906bd5dd76
+  RSA01: 79277f720a34eba824b237a3d92862572105737c
+  RxBlocking: e339d8a6e752e25ade95ff858466c55436668f59
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  RxTest: 8da864c0ee47534f586ff18fb0c7e5b2f1fe5023
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
+  TwicketSegmentedControl: 6d7a4cf243657e0ac3f00d06d873a25334c04042
+  XLActionController: d2ab12a967ae0fee0b4563b8d809c8fb13ebc636
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b2b1fab6a29dc3b57306084d03d43fb5889aadee
+PODFILE CHECKSUM: 9e555242f70ccc19c8e435ab08b892cb4e97abae
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.6.0.beta.2

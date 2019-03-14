@@ -1,4 +1,4 @@
-# platform :ios, '8.0'
+# platform :ios, '9.0'
 
 target 'DevFramework' do
 use_frameworks!
@@ -9,15 +9,37 @@ pod "YYModel"
 pod "FMDB"
 pod "SVProgressHUD"
 pod "pop"
+pod 'RxSwift',    '~> 4.2.0'
+pod 'RxCocoa',    '~> 4.0'
+pod 'RxDataSources', '~> 3.0'
+pod 'RSA01', :path=> '/Users/zhangzhifang/RSA01'
+
+pod 'TwicketSegmentedControl', '~> 0.1.2'
+pod 'PagingMenuController', '~> 2.2.0'
+pod 'PreviewTransition', '~> 4.0.0'
+pod 'SCLAlertView', '~> 0.8'
+pod 'SwiftMessages', '~> 6.0.2'
+pod 'XLActionController', '~> 4.1.1'
+pod 'Popover', '~> 1.2.2'
+pod 'Presentr', '~> 1.9'
+#pod 'expanding-collection', '~> 3.0.0'
+pod 'Persei', '~> 3.1.1'
+pod 'FaceAware', '~> 1.6.0'
+pod 'JTAppleCalendar', '~> 7.1.7'
+pod 'DateTimePicker', '~> 2.1.3'
+#pod 'NMessenger'
+#pod 'RAMReel', '~> 4.0.0'
+#pod 'RAMPaperSwitch'
+#pod 'MFCircleDialPad'
 
   target 'DevFrameworkTests' do
     inherit! :search_paths
-
+    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest',     '~> 4.0'
   end
 
   target 'DevFrameworkUITests' do
     inherit! :search_paths
-
   end
 
 end

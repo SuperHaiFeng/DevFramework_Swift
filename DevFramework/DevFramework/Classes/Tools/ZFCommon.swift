@@ -14,10 +14,12 @@ let AppKey = ""
 let AppSecret = ""
 let RedirectURI = "http://www.baidu.com"
 
-let iphoneX = UIScreen.main.bounds.height > 800.0
-let kNavigationHeight = iphoneX ? 88 : 64
+let iphoneX = UIApplication.shared.statusBarFrame.height > 20
+let kNavigationHeight = UIApplication.shared.statusBarFrame.height+44
 let kContentHeight = UIScreen.main.bounds.height - CGFloat(kNavigationHeight)
 
+///用户需要注册通知
+let ZFUserShouldRegisterNotification = "ZFUserShouldRegisterNotification"
 ///用户需要登录通知
 let ZFUserShouldLoginNotification = "ZFUserShouldLoginNotification"
 ///用户登录成功通知

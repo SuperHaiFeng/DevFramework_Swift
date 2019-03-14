@@ -120,6 +120,7 @@ extension ZFBaseViewController{
 extension ZFBaseViewController {
     @objc private func register() {
         print("注册")
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: ZFUserShouldRegisterNotification), object: nil)
     }
     
     @objc private func login() {

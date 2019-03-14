@@ -33,4 +33,7 @@ class DevFrameworkTests: XCTestCase {
         }
     }
     
+    func testRXSwift() {
+        
+    }
 }

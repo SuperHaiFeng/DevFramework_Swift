@@ -31,6 +31,10 @@ class DevFrameworkUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        print("我是测试")
     }
     
+    func testUI() {
+        
+    }
 }
