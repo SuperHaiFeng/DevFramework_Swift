@@ -37,5 +37,10 @@ class ZFNavigationController: UINavigationController {
         popViewController(animated: true)
     }
 
+    func swapTwoValues<V>(a: inout V, b: inout V) {
+        let tem = a
+        a = b
+        b = tem
+    }
 
 }

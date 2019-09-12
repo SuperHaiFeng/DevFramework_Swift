@@ -14,12 +14,14 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Alamofire (4.8.2)
   - DateTimePicker (2.1.3)
   - Differentiator (3.0.2)
   - FaceAware (1.6.0)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - HandyJSON (5.0.0-beta.1)
   - JTAppleCalendar (7.1.7)
   - PagingMenuController (2.2.0)
   - Persei (3.1.1)
@@ -27,7 +29,6 @@ PODS:
   - Popover (1.2.2)
   - Presentr (1.9)
   - PreviewTransition (4.0.0)
-  - RSA01 (0.0.1)
   - RxBlocking (4.2.0):
     - RxSwift (~> 4.0)
   - RxCocoa (4.2.0):
@@ -55,9 +56,11 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Alamofire (~> 4.8.2)
   - DateTimePicker (~> 2.1.3)
   - FaceAware (~> 1.6.0)
   - FMDB
+  - HandyJSON (~> 5.0.0-beta.1)
   - JTAppleCalendar (~> 7.1.7)
   - PagingMenuController (~> 2.2.0)
   - Persei (~> 3.1.1)
@@ -65,7 +68,6 @@ DEPENDENCIES:
   - Popover (~> 1.2.2)
   - Presentr (~> 1.9)
   - PreviewTransition (~> 4.0.0)
-  - RSA01 (from `/Users/zhangzhifang/RSA01`)
   - RxBlocking (~> 4.0)
   - RxCocoa (~> 4.0)
   - RxDataSources (~> 3.0)
@@ -82,10 +84,12 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Alamofire
     - DateTimePicker
     - Differentiator
     - FaceAware
     - FMDB
+    - HandyJSON
     - JTAppleCalendar
     - PagingMenuController
     - Persei
@@ -106,16 +110,14 @@ SPEC REPOS:
     - XLActionController
     - YYModel
 
-EXTERNAL SOURCES:
-  RSA01:
-    :path: "/Users/zhangzhifang/RSA01"
-
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   DateTimePicker: 1d34181c5e9cd6a32ca87174fdf66c9710e483ef
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   FaceAware: 7708f7ac2e2521f101dd1462b351c5486eb0a590
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
   JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
   PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
   Persei: 6d36b54e40eccd437211548d3f897269c85d3a13
@@ -123,7 +125,6 @@ SPEC CHECKSUMS:
   Popover: 21e357f86d45c8d9e29a41a4adbca3664d6e511f
   Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
   PreviewTransition: 5495edbb67a5e041383ad1760e7f71906bd5dd76
-  RSA01: 79277f720a34eba824b237a3d92862572105737c
   RxBlocking: e339d8a6e752e25ade95ff858466c55436668f59
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
@@ -137,6 +138,6 @@ SPEC CHECKSUMS:
   XLActionController: d2ab12a967ae0fee0b4563b8d809c8fb13ebc636
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 9e555242f70ccc19c8e435ab08b892cb4e97abae
+PODFILE CHECKSUM: 379f14038448da6838b535d60d309be35d976b9b
 
 COCOAPODS: 1.6.0.beta.2

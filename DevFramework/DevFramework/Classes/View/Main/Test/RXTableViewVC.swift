@@ -33,6 +33,13 @@ class RXTableViewVC: UIViewController {
         tableView = UITableView.init(frame: self.view.frame, style: .plain)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         self.view.addSubview(tableView)
+        let left = UIBarButtonItem(image: UIImage(named: "error"), style: .done, target: self, action: #selector(close))
+        
+        self.navigationController?.navigationItem.leftBarButtonItem = left
+    }
+    
+    @objc func close() {
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -41,7 +48,7 @@ extension RXTableViewVC {
         let items = Observable.just([
             "控件的使用",
             "手势的使用",
-            "进度条的用法",
+            "注册",
             "标签的用法"
             ])
         //设置单元格数据
@@ -62,6 +69,9 @@ extension RXTableViewVC {
                 break
                 case 1:
                     self.navigationController?.pushViewController(RXCircleVC(), animated: true)
+                break
+                case 2:
+                    self.navigationController?.pushViewController(RXRegister(), animated: true)
                 break
             default: break
                 

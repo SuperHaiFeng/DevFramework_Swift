@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		9C0CEB1CEFFFC53DD4600E3D /* Pods_DevFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E727DC21B1E39F454AF228D6 /* Pods_DevFrameworkUITests.framework */; };
 		9E04992D2151FB0A00648E69 /* ZFTestVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04992C2151FB0A00648E69 /* ZFTestVc.swift */; };
+		9E2A7E5222705A230082F76C /* RXRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A7E5022705A230082F76C /* RXRegister.swift */; };
+		9E2A7E5322705A230082F76C /* RXRegister.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E2A7E5122705A230082F76C /* RXRegister.xib */; };
+		9E2A7E5622705F630082F76C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A7E5522705F630082F76C /* Protocols.swift */; };
+		9E2A7E58227062F70082F76C /* RXGithubDefaultValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A7E57227062F70082F76C /* RXGithubDefaultValidationService.swift */; };
+		9E2A7E5A227069940082F76C /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A7E59227069940082F76C /* String+URL.swift */; };
+		9E2A7E5C22706C200082F76C /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A7E5B22706C200082F76C /* BindingExtensions.swift */; };
+		9E2A7E5E22706E1C0082F76C /* RXRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A7E5D22706E1C0082F76C /* RXRegisterViewModel.swift */; };
+		9E2A7E62227098880082F76C /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A7E60227098880082F76C /* Wireframe.swift */; };
+		9E2A7E63227098880082F76C /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A7E61227098880082F76C /* ActivityIndicator.swift */; };
+		9E2A7E6522715B980082F76C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A7E6422715B980082F76C /* ViewController.swift */; };
+		9E53F0B82293FB1700A8D850 /* ZFNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E53F0B72293FB1700A8D850 /* ZFNetworkTool.swift */; };
+		9E53F0BA2293FBEF00A8D850 /* ZFRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E53F0B92293FBEF00A8D850 /* ZFRouter.swift */; };
+		9E53F0BC229407C500A8D850 /* ZFNetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E53F0BB229407C500A8D850 /* ZFNetError.swift */; };
+		9E53F0BF229428AE00A8D850 /* ZFMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E53F0BE229428AE00A8D850 /* ZFMessageModel.swift */; };
+		9E53F0C122942BB200A8D850 /* ZFTestNetAFVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E53F0C022942BB200A8D850 /* ZFTestNetAFVC.swift */; };
+		9E53F0C5229502D700A8D850 /* ZFBaseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E53F0C4229502D700A8D850 /* ZFBaseStruct.swift */; };
 		9E61D0602231011C0014E23C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E61D05F2231011C0014E23C /* CoreGraphics.framework */; };
 		9E61D062223101780014E23C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E61D061223101780014E23C /* CoreFoundation.framework */; };
 		9E61D064223101820014E23C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E61D063223101820014E23C /* Foundation.framework */; };
@@ -113,6 +129,22 @@
 		704C5F240BA45BB6E183D1F8 /* Pods-DevFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevFrameworkTests/Pods-DevFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E563D54187FF44E72809392 /* Pods-DevFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevFramework/Pods-DevFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		9E04992C2151FB0A00648E69 /* ZFTestVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFTestVc.swift; sourceTree = "<group>"; };
+		9E2A7E5022705A230082F76C /* RXRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXRegister.swift; sourceTree = "<group>"; };
+		9E2A7E5122705A230082F76C /* RXRegister.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RXRegister.xib; sourceTree = "<group>"; };
+		9E2A7E5522705F630082F76C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		9E2A7E57227062F70082F76C /* RXGithubDefaultValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXGithubDefaultValidationService.swift; sourceTree = "<group>"; };
+		9E2A7E59227069940082F76C /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
+		9E2A7E5B22706C200082F76C /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
+		9E2A7E5D22706E1C0082F76C /* RXRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXRegisterViewModel.swift; sourceTree = "<group>"; };
+		9E2A7E60227098880082F76C /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		9E2A7E61227098880082F76C /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		9E2A7E6422715B980082F76C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E53F0B72293FB1700A8D850 /* ZFNetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFNetworkTool.swift; sourceTree = "<group>"; };
+		9E53F0B92293FBEF00A8D850 /* ZFRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFRouter.swift; sourceTree = "<group>"; };
+		9E53F0BB229407C500A8D850 /* ZFNetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFNetError.swift; sourceTree = "<group>"; };
+		9E53F0BE229428AE00A8D850 /* ZFMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFMessageModel.swift; sourceTree = "<group>"; };
+		9E53F0C022942BB200A8D850 /* ZFTestNetAFVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFTestNetAFVC.swift; sourceTree = "<group>"; };
+		9E53F0C4229502D700A8D850 /* ZFBaseStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFBaseStruct.swift; sourceTree = "<group>"; };
 		9E61D05F2231011C0014E23C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9E61D061223101780014E23C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9E61D063223101820014E23C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -237,6 +269,48 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9E2A7E5422705EE80082F76C /* RXRegister */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A7E5022705A230082F76C /* RXRegister.swift */,
+				9E2A7E5122705A230082F76C /* RXRegister.xib */,
+				9E2A7E5522705F630082F76C /* Protocols.swift */,
+				9E2A7E57227062F70082F76C /* RXGithubDefaultValidationService.swift */,
+				9E2A7E5B22706C200082F76C /* BindingExtensions.swift */,
+				9E2A7E5D22706E1C0082F76C /* RXRegisterViewModel.swift */,
+			);
+			path = RXRegister;
+			sourceTree = "<group>";
+		};
+		9E2A7E5F2270986C0082F76C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A7E61227098880082F76C /* ActivityIndicator.swift */,
+				9E2A7E60227098880082F76C /* Wireframe.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9E53F0B62293FAA800A8D850 /* NetworkForAlamofire */ = {
+			isa = PBXGroup;
+			children = (
+				9E53F0B72293FB1700A8D850 /* ZFNetworkTool.swift */,
+				9E53F0B92293FBEF00A8D850 /* ZFRouter.swift */,
+				9E53F0BB229407C500A8D850 /* ZFNetError.swift */,
+				9E53F0C4229502D700A8D850 /* ZFBaseStruct.swift */,
+			);
+			path = NetworkForAlamofire;
+			sourceTree = "<group>";
+		};
+		9E53F0BD2294287800A8D850 /* TextNetAlamofire */ = {
+			isa = PBXGroup;
+			children = (
+				9E53F0BE229428AE00A8D850 /* ZFMessageModel.swift */,
+				9E53F0C022942BB200A8D850 /* ZFTestNetAFVC.swift */,
+			);
+			path = TextNetAlamofire;
+			sourceTree = "<group>";
+		};
 		9EEAC49E215C7982005BAACE /* pushsvcext */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +433,7 @@
 		A1458B84201AEB7600BC6A3B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				9E53F0B62293FAA800A8D850 /* NetworkForAlamofire */,
 				A1F6E7272044F813005E9A64 /* RefreshController */,
 				A1F741FA20231D05004D6FEF /* Network */,
 				A1458B96201AF88C00BC6A3B /* Extension */,
@@ -437,11 +512,16 @@
 		A1458B9E201B0B9300BC6A3B /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				9E53F0BD2294287800A8D850 /* TextNetAlamofire */,
+				9E2A7E5F2270986C0082F76C /* Services */,
+				9E2A7E5422705EE80082F76C /* RXRegister */,
 				9E04992C2151FB0A00648E69 /* ZFTestVc.swift */,
 				9EEAC4E9215CC0E4005BAACE /* ZFTraitsVC.swift */,
 				9E624B0C215E1F0200DC059B /* RXTableViewVC.swift */,
 				9E83A8102188545200806906 /* RXCircleVC.swift */,
 				A1458B9F201B0BA300BC6A3B /* ZFDemoViewController.swift */,
+				9E2A7E59227069940082F76C /* String+URL.swift */,
+				9E2A7E6422715B980082F76C /* ViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -673,6 +753,7 @@
 				A1FF880920304D0000702626 /* ZFWelcomView.xib in Resources */,
 				A1458B56201AE16400BC6A3B /* Assets.xcassets in Resources */,
 				A1F019E520416E3A0074A0B9 /* ZFStatusRetweetedCell.xib in Resources */,
+				9E2A7E5322705A230082F76C /* RXRegister.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,17 +872,18 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DevFramework/Pods-DevFramework-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DateTimePicker/DateTimePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/FaceAware/FaceAware.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/PagingMenuController/PagingMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/Persei/Persei.framework",
 				"${BUILT_PRODUCTS_DIR}/Popover/Popover.framework",
 				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
 				"${BUILT_PRODUCTS_DIR}/PreviewTransition/PreviewTransition.framework",
-				"${BUILT_PRODUCTS_DIR}/RSA01/RSA01.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -817,17 +899,18 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTimePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FaceAware.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Persei.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Popover.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PreviewTransition.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSA01.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -867,15 +950,25 @@
 				A138AB562040235900CD679B /* ZFStatusViewModel.swift in Sources */,
 				A1458B99201AF8E600BC6A3B /* Bundle.swift in Sources */,
 				A138AB4B203FB43500CD679B /* NIibLoadable.swift in Sources */,
+				9E2A7E5C22706C200082F76C /* BindingExtensions.swift in Sources */,
+				9E2A7E5E22706E1C0082F76C /* RXRegisterViewModel.swift in Sources */,
+				9E53F0BF229428AE00A8D850 /* ZFMessageModel.swift in Sources */,
 				A1F019DF20411ABE0074A0B9 /* ZFStatusToolBar.swift in Sources */,
+				9E53F0BA2293FBEF00A8D850 /* ZFRouter.swift in Sources */,
 				A138AB5420401F9D00CD679B /* ZFUser.swift in Sources */,
+				9E53F0C5229502D700A8D850 /* ZFBaseStruct.swift in Sources */,
+				9E2A7E5622705F630082F76C /* Protocols.swift in Sources */,
 				A138AB502040158A00CD679B /* ZFStatusCell.swift in Sources */,
 				A1F019DB20410A220074A0B9 /* UIImageView+WebImage.swift in Sources */,
 				A1458B4F201AE16400BC6A3B /* AppDelegate.swift in Sources */,
 				9E624B0D215E1F0200DC059B /* RXTableViewVC.swift in Sources */,
+				9E2A7E63227098880082F76C /* ActivityIndicator.swift in Sources */,
+				9E2A7E62227098880082F76C /* Wireframe.swift in Sources */,
 				A1458B8D201AEC2000BC6A3B /* ZFNavigationController.swift in Sources */,
+				9E2A7E58227062F70082F76C /* RXGithubDefaultValidationService.swift in Sources */,
 				A1FF8803203049B000702626 /* ZFWelcomView.swift in Sources */,
 				A1458BA2201B145900BC6A3B /* UIBarButtonItem+Extension.swift in Sources */,
+				9E2A7E6522715B980082F76C /* ViewController.swift in Sources */,
 				A1F741FC20231D3E004D6FEF /* ZFNetworkManager.swift in Sources */,
 				A1FF87FE202FE83400702626 /* ZFUserAccount.swift in Sources */,
 				A1EC7207202444970070B6EF /* ZFStatuses.swift in Sources */,
@@ -884,18 +977,23 @@
 				A1F6E7292044F8C8005E9A64 /* ZFRefreshControl.swift in Sources */,
 				A1F019E3204145DC0074A0B9 /* ZFStatusPicture.swift in Sources */,
 				A1458B8B201AEBF600BC6A3B /* ZFMainViewController.swift in Sources */,
+				9E53F0C122942BB200A8D850 /* ZFTestNetAFVC.swift in Sources */,
 				9EEAC4EA215CC0E4005BAACE /* ZFTraitsVC.swift in Sources */,
 				A1458B93201AEC7D00BC6A3B /* ZFMessageViewController.swift in Sources */,
 				9E83A8112188545200806906 /* RXCircleVC.swift in Sources */,
+				9E53F0B82293FB1700A8D850 /* ZFNetworkTool.swift in Sources */,
 				A1DD005220494810005B9EAC /* ZFComposeTypeView.swift in Sources */,
 				A1F6E72D20450D28005E9A64 /* ZFRefreshView.swift in Sources */,
 				9E04992D2151FB0A00648E69 /* ZFTestVc.swift in Sources */,
 				A1F019DD20410CC90074A0B9 /* UIImage+Extension.swift in Sources */,
+				9E53F0BC229407C500A8D850 /* ZFNetError.swift in Sources */,
 				A1FF8805203049C000702626 /* ZFNewFeatureView.swift in Sources */,
 				A1EC720520241B360070B6EF /* ZFNetworkMnager+Extension.swift in Sources */,
+				9E2A7E5A227069940082F76C /* String+URL.swift in Sources */,
 				A1F019E1204141A90074A0B9 /* ZFStatusPictureView.swift in Sources */,
 				A1458B8F201AEC3F00BC6A3B /* ZFBaseViewController.swift in Sources */,
 				A1458B95201AEC8700BC6A3B /* ZFProfileViewController.swift in Sources */,
+				9E2A7E5222705A230082F76C /* RXRegister.swift in Sources */,
 				A1E271F1202C549A0016B851 /* ZFOAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

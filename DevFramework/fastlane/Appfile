@@ -1,0 +1,6 @@
+app_identifier("duobao.DevFramework") # The bundle identifier of your app
+apple_id("1038439137@qq.com") # Your Apple email address
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

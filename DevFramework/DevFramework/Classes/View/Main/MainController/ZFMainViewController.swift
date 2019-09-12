@@ -60,7 +60,7 @@ class ZFMainViewController: UITabBarController {
         let when = DispatchTime.now()
         DispatchQueue.main.asyncAfter(deadline: when) {
             SVProgressHUD.setDefaultMaskType(.clear)
-            let vc = ZFNavigationController(rootViewController: RXTableViewVC())
+            let vc = UINavigationController(rootViewController: ZFTestNetAFVC())
             vc.navigationBar.isHidden = false
             self.present(vc, animated: true, completion: nil)
         }

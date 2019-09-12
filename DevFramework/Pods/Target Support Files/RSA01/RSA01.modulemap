@@ -1,6 +1,0 @@
-framework module RSA01 {
-  umbrella header "RSA01-umbrella.h"
-
-  export *
-  module * { export * }
-}

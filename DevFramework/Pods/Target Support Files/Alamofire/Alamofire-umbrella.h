@@ -10,8 +10,7 @@
 #endif
 #endif
 
-#import "RSA.h"
 
-FOUNDATION_EXPORT double RSA01VersionNumber;
-FOUNDATION_EXPORT const unsigned char RSA01VersionString[];
+FOUNDATION_EXPORT double AlamofireVersionNumber;
+FOUNDATION_EXPORT const unsigned char AlamofireVersionString[];
 
