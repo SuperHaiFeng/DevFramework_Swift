@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "203783B50E05A8DD1EA035F53B727629"
+               BlueprintIdentifier = "0B8CA00DBD1349A00128A00324035CA5"
+               BuildableName = "XLActionController.framework"
                BlueprintName = "XLActionController"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "XLActionController.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

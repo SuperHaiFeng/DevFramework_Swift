@@ -112,7 +112,7 @@ class ZFStatusesListViewModel {
             SDWebImageManager.shared().downloadImage(with: url, options: [], progress: nil, completed: { (image, _, _, _, _) in
                 
                 if let image = image,
-                    let data = UIImagePNGRepresentation(image){
+                    let data = image.pngData(){
                     length += data.count
                     ///缓存成功，调用更新图像大小
                     vm.updateSingleImage(image: image)

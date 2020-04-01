@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2E87B0DCDDA5F229D82359067B5F6C5"
+               BlueprintIdentifier = "433F79D5F3953F8EA8E7B0C7A2A27D32"
+               BuildableName = "Presentr.framework"
                BlueprintName = "Presentr"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Presentr.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

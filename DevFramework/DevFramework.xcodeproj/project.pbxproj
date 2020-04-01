@@ -31,6 +31,12 @@
 		9E61D066223101900014E23C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E61D065223101900014E23C /* AVFoundation.framework */; };
 		9E624B0D215E1F0200DC059B /* RXTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E624B0C215E1F0200DC059B /* RXTableViewVC.swift */; };
 		9E83A8112188545200806906 /* RXCircleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83A8102188545200806906 /* RXCircleVC.swift */; };
+		9EC843E323C57EDE00D0E566 /* SystemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC843E223C57EDE00D0E566 /* SystemProtocol.swift */; };
+		9EC843E523C584F400D0E566 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC843E423C584F300D0E566 /* UserDefaults+Extension.swift */; };
+		9EC843E723C5AF2900D0E566 /* LineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC843E623C5AF2900D0E566 /* LineProtocol.swift */; };
+		9EC843EF23C5CF3400D0E566 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC843EE23C5CF3300D0E566 /* ListProtocol.swift */; };
+		9EC843F123C6DAEF00D0E566 /* GiftDropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC843F023C6DAEF00D0E566 /* GiftDropImageView.swift */; };
+		9EC843F323C6DB8500D0E566 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC843F223C6DB8400D0E566 /* UIView+Extension.swift */; };
 		9EEAC4A0215C7982005BAACE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEAC49F215C7982005BAACE /* NotificationService.swift */; };
 		9EEAC4A4215C7982005BAACE /* pushsvcext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9EEAC49D215C7982005BAACE /* pushsvcext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9EEAC4AA215C79EB005BAACE /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEAC4A9215C79EB005BAACE /* UserNotifications.framework */; };
@@ -151,6 +157,12 @@
 		9E61D065223101900014E23C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9E624B0C215E1F0200DC059B /* RXTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXTableViewVC.swift; sourceTree = "<group>"; };
 		9E83A8102188545200806906 /* RXCircleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCircleVC.swift; sourceTree = "<group>"; };
+		9EC843E223C57EDE00D0E566 /* SystemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemProtocol.swift; sourceTree = "<group>"; };
+		9EC843E423C584F300D0E566 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		9EC843E623C5AF2900D0E566 /* LineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineProtocol.swift; sourceTree = "<group>"; };
+		9EC843EE23C5CF3300D0E566 /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
+		9EC843F023C6DAEF00D0E566 /* GiftDropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftDropImageView.swift; sourceTree = "<group>"; };
+		9EC843F223C6DB8400D0E566 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		9EEAC498215C7931005BAACE /* DevFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DevFramework copy-Info.plist"; path = "/Users/zhangzhifang/DevFramework_Swift/DevFramework/DevFramework copy-Info.plist"; sourceTree = "<absolute>"; };
 		9EEAC49D215C7982005BAACE /* pushsvcext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = pushsvcext.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EEAC49F215C7982005BAACE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -497,6 +509,7 @@
 				A138AB4A203FB43500CD679B /* NIibLoadable.swift */,
 				A1F019DA20410A220074A0B9 /* UIImageView+WebImage.swift */,
 				A1F019DC20410CC90074A0B9 /* UIImage+Extension.swift */,
+				9EC843F223C6DB8400D0E566 /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -522,6 +535,11 @@
 				A1458B9F201B0BA300BC6A3B /* ZFDemoViewController.swift */,
 				9E2A7E59227069940082F76C /* String+URL.swift */,
 				9E2A7E6422715B980082F76C /* ViewController.swift */,
+				9EC843E223C57EDE00D0E566 /* SystemProtocol.swift */,
+				9EC843E423C584F300D0E566 /* UserDefaults+Extension.swift */,
+				9EC843E623C5AF2900D0E566 /* LineProtocol.swift */,
+				9EC843EE23C5CF3300D0E566 /* ListProtocol.swift */,
+				9EC843F023C6DAEF00D0E566 /* GiftDropImageView.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -800,12 +818,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DevFrameworkTests/Pods-DevFrameworkTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
@@ -894,6 +914,7 @@
 				"${BUILT_PRODUCTS_DIR}/TwicketSegmentedControl/TwicketSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/XLActionController/XLActionController.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/matrix-wechat/Matrix.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -921,6 +942,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwicketSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLActionController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Matrix.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -952,6 +974,8 @@
 				A138AB4B203FB43500CD679B /* NIibLoadable.swift in Sources */,
 				9E2A7E5C22706C200082F76C /* BindingExtensions.swift in Sources */,
 				9E2A7E5E22706E1C0082F76C /* RXRegisterViewModel.swift in Sources */,
+				9EC843EF23C5CF3400D0E566 /* ListProtocol.swift in Sources */,
+				9EC843E323C57EDE00D0E566 /* SystemProtocol.swift in Sources */,
 				9E53F0BF229428AE00A8D850 /* ZFMessageModel.swift in Sources */,
 				A1F019DF20411ABE0074A0B9 /* ZFStatusToolBar.swift in Sources */,
 				9E53F0BA2293FBEF00A8D850 /* ZFRouter.swift in Sources */,
@@ -970,6 +994,8 @@
 				A1458BA2201B145900BC6A3B /* UIBarButtonItem+Extension.swift in Sources */,
 				9E2A7E6522715B980082F76C /* ViewController.swift in Sources */,
 				A1F741FC20231D3E004D6FEF /* ZFNetworkManager.swift in Sources */,
+				9EC843F123C6DAEF00D0E566 /* GiftDropImageView.swift in Sources */,
+				9EC843F323C6DB8500D0E566 /* UIView+Extension.swift in Sources */,
 				A1FF87FE202FE83400702626 /* ZFUserAccount.swift in Sources */,
 				A1EC7207202444970070B6EF /* ZFStatuses.swift in Sources */,
 				A1EC7209202446260070B6EF /* ZFStatusesListViewModel.swift in Sources */,
@@ -978,6 +1004,7 @@
 				A1F019E3204145DC0074A0B9 /* ZFStatusPicture.swift in Sources */,
 				A1458B8B201AEBF600BC6A3B /* ZFMainViewController.swift in Sources */,
 				9E53F0C122942BB200A8D850 /* ZFTestNetAFVC.swift in Sources */,
+				9EC843E723C5AF2900D0E566 /* LineProtocol.swift in Sources */,
 				9EEAC4EA215CC0E4005BAACE /* ZFTraitsVC.swift in Sources */,
 				A1458B93201AEC7D00BC6A3B /* ZFMessageViewController.swift in Sources */,
 				9E83A8112188545200806906 /* RXCircleVC.swift in Sources */,
@@ -994,6 +1021,7 @@
 				A1458B8F201AEC3F00BC6A3B /* ZFBaseViewController.swift in Sources */,
 				A1458B95201AEC8700BC6A3B /* ZFProfileViewController.swift in Sources */,
 				9E2A7E5222705A230082F76C /* RXRegister.swift in Sources */,
+				9EC843E523C584F400D0E566 /* UserDefaults+Extension.swift in Sources */,
 				A1E271F1202C549A0016B851 /* ZFOAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1199,7 +1227,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = duobao.DevFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1219,7 +1247,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = duobao.DevFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

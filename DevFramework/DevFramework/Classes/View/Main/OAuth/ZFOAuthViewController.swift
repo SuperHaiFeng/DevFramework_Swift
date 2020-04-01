@@ -46,7 +46,7 @@ class ZFOAuthViewController: UIViewController {
 }
 
 extension ZFOAuthViewController : UIWebViewDelegate {
-    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
         
         if request.url?.absoluteString.hasPrefix(RedirectURI) == false{
             return true

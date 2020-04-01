@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIBarButtonItem {
-    convenience init(title: String, fontSize: CGFloat = 16, image: UIImage?, horizontalAlignment: UIControlContentHorizontalAlignment, target: AnyObject?, action: Selector) {
+    convenience init(title: String, fontSize: CGFloat = 16, image: UIImage?, horizontalAlignment: UIControl.ContentHorizontalAlignment, target: AnyObject?, action: Selector) {
         let btn : UIButton = UIButton.init()
         btn.setTitle(title, for: [])
         btn.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
@@ -18,8 +18,8 @@ extension UIBarButtonItem {
         btn.addTarget(target, action: action, for: .touchUpInside)
         btn.setImage(image, for: [])
         if image != nil {
-            btn.imageEdgeInsets = UIEdgeInsetsMake(12, -5, 12, 0)
-            btn.titleEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 0)
+            btn.imageEdgeInsets = UIEdgeInsets(top: 12, left: -5, bottom: 12, right: 0)
+            btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: -5, bottom: 0, right: 0)
         }
         btn.contentHorizontalAlignment = horizontalAlignment
         btn.imageView?.contentMode = .scaleAspectFit

@@ -150,7 +150,7 @@ class ZFStatusViewModel {
         if let text = status.text {
             height += (text as NSString).boundingRect(with: viewSize,
                                                       options: [.usesLineFragmentOrigin],
-                                                      attributes: [NSAttributedStringKey.font: originalFont],
+                                                      attributes: [NSAttributedString.Key.font: originalFont],
                                                       context: nil).height
         }
         
@@ -161,7 +161,7 @@ class ZFStatusViewModel {
             if let text = retweetedText {
                 height += (text as NSString).boundingRect(with: viewSize,
                                                          options: [.usesLineFragmentOrigin],
-                                                         attributes: [NSAttributedStringKey.font: retweetedFont],
+                                                         attributes: [NSAttributedString.Key.font: retweetedFont],
                                                          context: nil).height
             }
         }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE56C80FE54FE9F3E582DF1C9AA9BCDC"
+               BlueprintIdentifier = "393CC770FF72EE0CEB06832C28698CA2"
+               BuildableName = "FaceAware.framework"
                BlueprintName = "FaceAware"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "FaceAware.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

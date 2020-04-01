@@ -8,9 +8,10 @@
 
 import UIKit
 import SVProgressHUD
+import RxSwift
 
 class ZFMainViewController: UITabBarController {
-    
+    let disposeBag = DisposeBag()
     ///定时器
     private var timer : Timer?
 
@@ -74,8 +75,13 @@ class ZFMainViewController: UITabBarController {
     
     //objc允许这个函数在运行时通过OC的消息机制被调用
     @objc private func composeStatus() {
-        let compose = ZFComposeTypeView.loadFromNib()
-        compose.show()
+//        let compose = ZFComposeTypeView.loadFromNib()
+//        compose.show()
+        let gift = GiftDropImageView(imageUrl: "")
+        gift.showAnimation(fromView: view)
+        gift.tapGiftObserver.subscribe(onNext: { [unowned self] _ in
+            
+        }).disposed(by: disposeBag)
     }
     
     private lazy var composeButton: UIButton = UIButton.init()
@@ -107,12 +113,12 @@ extension ZFMainViewController : UITabBarControllerDelegate {
     ///将要选择item
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         ///获取控制器在数组中的索引
-        let index = childViewControllers.index(of: viewController)
+        let index = children.index(of: viewController)
         ///获取当前索引(重复点击首页item)
         if selectedIndex == 0 && index == selectedIndex{
             ///让表格滚动到底部,获取到控制器
-            let nav = childViewControllers[0] as! UINavigationController
-            let vc = nav.childViewControllers[0] as! ZFHomeViewController
+            let nav = children[0] as! UINavigationController
+            let vc = nav.children[0] as! ZFHomeViewController
             vc.tableView?.setContentOffset(CGPoint.init(x: 0, y: -128), animated: true)
             vc.refreshController?.beginRefreshing()
             ///刷新表格
@@ -144,12 +150,12 @@ extension ZFMainViewController {
     }
     
     private func setupComposeButton(){
-        composeButton.setImage(UIImage.init(named: "add"), for: UIControlState.normal)
-        composeButton.setBackgroundImage(UIImage.init(named: "R"), for: UIControlState.normal)
+        composeButton.setImage(UIImage.init(named: "add"), for: UIControl.State.normal)
+        composeButton.setBackgroundImage(UIImage.init(named: "R"), for: UIControl.State.normal)
         tabBar.addSubview(composeButton)
         
         //计算按钮的宽度
-        let count = CGFloat(childViewControllers.count)
+        let count = CGFloat(children.count)
         let w = tabBar.bounds.width/count
         composeButton.frame = tabBar.bounds.insetBy(dx: w * 2, dy: 0)
         composeButton.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
@@ -196,7 +202,7 @@ extension ZFMainViewController {
         (data as NSData).write(toFile: "/Users/Andy/Desktop/demo.json", atomically: true)
         */
         var arrayM = [UIViewController]()
-        for dict in array! {
+        for dict in array {
             arrayM.append(controler(dict: dict as [String : String]))
         }
         viewControllers = arrayM
@@ -217,7 +223,7 @@ extension ZFMainViewController {
         vc.title = title
         vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
         vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imageName + "_selected")?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.gray], for: .highlighted)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.gray], for: .highlighted)
         
         let nav = ZFNavigationController(rootViewController:vc)
         return nav

@@ -81,10 +81,10 @@ extension ZFBaseViewController{
         tableView?.dataSource = self
         tableView?.delegate = self
         
-        tableView?.contentInset = UIEdgeInsetsMake(navigationBar.bounds.height,
-                                                   0,
-                                                   0,
-                                                   0)
+        tableView?.contentInset = UIEdgeInsets(top: navigationBar.bounds.height,
+                                               left: 0,
+                                               bottom: 0,
+                                               right: 0)
         
         ///修改指示器的缩进
         tableView?.scrollIndicatorInsets = tableView!.contentInset
@@ -110,7 +110,7 @@ extension ZFBaseViewController{
         view.addSubview(navigationBar)
         navigationBar.isTranslucent = false
         navigationBar.items = [navItem]
-        navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.darkGray]
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
         statusView.backgroundColor = UIColor.white
         navigationBar.tintColor = UIColor.orange
         navigationBar.addSubview(statusView)

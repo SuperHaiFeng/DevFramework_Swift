@@ -12,7 +12,7 @@ class ZFDemoViewController: ZFBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "\(navigationController?.childViewControllers.count ?? 0)"
+        title = "\(navigationController?.children.count ?? 0)"
         
     }
 

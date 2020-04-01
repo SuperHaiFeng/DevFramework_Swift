@@ -64,16 +64,16 @@ class ZFTraitsVC: ZFTestVc {
         let top = self.label.frame.maxY
         self.textField1 = UITextField.init(frame: CGRect.init(x: 20, y: top, width: 300, height: 40))
         self.textField1.placeholder = "输入"
-        self.textField1.borderStyle = UITextBorderStyle.roundedRect
+        self.textField1.borderStyle = UITextField.BorderStyle.roundedRect
         self.view.addSubview(self.textField1)
         
         self.textField2 = UITextField.init(frame: CGRect.init(x: 20, y: self.textField1.frame.maxY, width: 300, height: 40))
-        self.textField2.borderStyle = UITextBorderStyle.roundedRect
+        self.textField2.borderStyle = UITextField.BorderStyle.roundedRect
         self.view.addSubview(self.textField2)
         
-        self.button = UIButton.init(type: UIButtonType.system)
+        self.button = UIButton.init(type: UIButton.ButtonType.system)
         self.button.frame = CGRect.init(x: 20, y: self.textField2.frame.maxY, width: 80, height: 40)
-        self.button.setTitle("点我", for: UIControlState.normal)
+        self.button.setTitle("点我", for: UIControl.State.normal)
         self.button.backgroundColor = UIColor.green
         self.view.addSubview(self.button)
         
@@ -87,7 +87,7 @@ class ZFTraitsVC: ZFTestVc {
         self.view.addSubview(segment)
         
         indicator = UIActivityIndicatorView.init(frame: CGRect.init(x: switch1.frame.maxX, y: switch1.frame.minY, width: 40, height: 40))
-        indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        indicator.style = UIActivityIndicatorView.Style.gray
         self.view.addSubview(indicator)
         
         slider = UISlider.init(frame: CGRect.init(x: 20, y: segment.frame.maxY, width: 100, height: 40))
@@ -97,10 +97,10 @@ class ZFTraitsVC: ZFTestVc {
         self.view.addSubview(step)
         
         ctimer = UIDatePicker.init(frame: CGRect.init(x: 0, y: step.frame.maxY, width: 320, height: 200))
-        ctimer.datePickerMode = UIDatePickerMode.countDownTimer
+        ctimer.datePickerMode = UIDatePicker.Mode.countDownTimer
         self.view.addSubview(ctimer)
         
-        start = UIButton.init(type: UIButtonType.custom)
+        start = UIButton.init(type: UIButton.ButtonType.custom)
         start.frame = CGRect.init(x: 0, y: ctimer.frame.maxY, width: 320, height: 30)
         start.setTitleColor(UIColor.red, for: .normal)
         start.setTitleColor(UIColor.gray, for: .disabled)

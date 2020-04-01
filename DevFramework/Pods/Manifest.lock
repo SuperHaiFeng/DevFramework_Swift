@@ -1,50 +1,62 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Alamofire (4.8.2)
   - DateTimePicker (2.1.3)
-  - Differentiator (3.0.2)
+  - Differentiator (3.1.0)
   - FaceAware (1.6.0)
-  - FMDB (2.6.2):
-    - FMDB/standard (= 2.6.2)
-  - FMDB/standard (2.6.2)
-  - HandyJSON (5.0.0-beta.1)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HandyJSON (5.0.1)
   - JTAppleCalendar (7.1.7)
+  - matrix-wechat (0.6.5):
+    - matrix-wechat/matrixARC (= 0.6.5)
+    - matrix-wechat/matrixNonARC1 (= 0.6.5)
+    - matrix-wechat/matrixNonARC2 (= 0.6.5)
+  - matrix-wechat/matrixARC (0.6.5):
+    - matrix-wechat/matrixNonARC1
+  - matrix-wechat/matrixNonARC1 (0.6.5)
+  - matrix-wechat/matrixNonARC2 (0.6.5):
+    - matrix-wechat/matrixARC
   - PagingMenuController (2.2.0)
   - Persei (3.1.1)
-  - pop (1.0.9)
+  - pop (1.0.12)
   - Popover (1.2.2)
   - Presentr (1.9)
   - PreviewTransition (4.0.0)
-  - RxBlocking (4.2.0):
+  - RxAtomic (4.4.2)
+  - RxBlocking (4.4.1):
+    - RxAtomic (~> 4.4)
     - RxSwift (~> 4.0)
-  - RxCocoa (4.2.0):
+  - RxCocoa (4.4.1):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.0.2):
+  - RxDataSources (3.1.0):
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
-  - RxTest (4.2.0):
+  - RxTest (4.4.1):
+    - RxAtomic (~> 4.4)
     - RxSwift (~> 4.0)
   - SCLAlertView (0.8)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
-  - SVProgressHUD (2.1.2)
+  - SDWebImage (5.4.2):
+    - SDWebImage/Core (= 5.4.2)
+  - SDWebImage/Core (5.4.2)
+  - SVProgressHUD (2.2.5)
   - SwiftMessages (6.0.2):
     - SwiftMessages/App (= 6.0.2)
   - SwiftMessages/App (6.0.2)
@@ -60,8 +72,9 @@ DEPENDENCIES:
   - DateTimePicker (~> 2.1.3)
   - FaceAware (~> 1.6.0)
   - FMDB
-  - HandyJSON (~> 5.0.0-beta.1)
+  - HandyJSON (~> 5.0.1)
   - JTAppleCalendar (~> 7.1.7)
+  - matrix-wechat
   - PagingMenuController (~> 2.2.0)
   - Persei (~> 3.1.1)
   - pop
@@ -82,7 +95,7 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
     - Alamofire
     - DateTimePicker
@@ -91,12 +104,14 @@ SPEC REPOS:
     - FMDB
     - HandyJSON
     - JTAppleCalendar
+    - matrix-wechat
     - PagingMenuController
     - Persei
     - pop
     - Popover
     - Presentr
     - PreviewTransition
+    - RxAtomic
     - RxBlocking
     - RxCocoa
     - RxDataSources
@@ -111,33 +126,35 @@ SPEC REPOS:
     - YYModel
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   DateTimePicker: 1d34181c5e9cd6a32ca87174fdf66c9710e483ef
-  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   FaceAware: 7708f7ac2e2521f101dd1462b351c5486eb0a590
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
   JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
+  matrix-wechat: 4e8a4047dde97c4634ef782edcd69ce276c5b4ab
   PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
   Persei: 6d36b54e40eccd437211548d3f897269c85d3a13
-  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Popover: 21e357f86d45c8d9e29a41a4adbca3664d6e511f
   Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
   PreviewTransition: 5495edbb67a5e041383ad1760e7f71906bd5dd76
-  RxBlocking: e339d8a6e752e25ade95ff858466c55436668f59
-  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
-  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
+  RxBlocking: 5508e90d36ca2304632dc9378ece4e9b5d4bf656
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
-  RxTest: 8da864c0ee47534f586ff18fb0c7e5b2f1fe5023
+  RxTest: f8e548755ca3c7502dc41c7d3b28802c90115a38
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SDWebImage: 4ca2dc4eefae4224bea8f504251cda485a363745
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
   TwicketSegmentedControl: 6d7a4cf243657e0ac3f00d06d873a25334c04042
   XLActionController: d2ab12a967ae0fee0b4563b8d809c8fb13ebc636
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 379f14038448da6838b535d60d309be35d976b9b
+PODFILE CHECKSUM: 6f09757ee84c0a064d086701f396a15023f58685
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.8.4

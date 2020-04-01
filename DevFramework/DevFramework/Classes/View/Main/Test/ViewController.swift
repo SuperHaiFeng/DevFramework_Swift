@@ -15,5 +15,13 @@ typealias RXViewController = UIViewController
 class ViewController: UIViewController {
     var disposeBag = DisposeBag()
     
-
+    func textTransaction() {
+        
+    }
+    
+    override func viewDidLoad() {
+        UIView.beginAnimations("", context: nil)
+        
+        UIView.commitAnimations()
+    }
 }

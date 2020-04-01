@@ -9,12 +9,13 @@
 import UIKit
 import SVProgressHUD
 import AFNetworking
+import Matrix
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow()
         window?.backgroundColor = UIColor.white
@@ -38,6 +39,18 @@ extension AppDelegate {
         ///取得用户授权显示通知（上方的提示条、声音、BadgeNumber）
         let notifySetting = UIUserNotificationSettings.init(types: [.alert,.sound,.badge], categories: nil)
         UIApplication.shared.registerUserNotificationSettings(notifySetting)
+        /// 加载matric
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime(uptimeNanoseconds: 1)) {
+            let matrix: Matrix = Matrix.sharedInstance() as! Matrix
+            let matrixBuilder = MatrixBuilder()
+            matrixBuilder.pluginListener = self
+            let crashBlockPlugin = WCCrashBlockMonitorPlugin()  // 卡顿和崩溃监控
+            let memoryStatPlugin = WCMemoryStatPlugin()     // 内存监控(性能消耗比较大，按需开启)
+            matrixBuilder.add(crashBlockPlugin)
+            matrixBuilder.add(memoryStatPlugin)
+            matrix.add(matrixBuilder)
+            crashBlockPlugin.start()
+        }
     }
 }
 
@@ -53,6 +66,29 @@ extension AppDelegate {
             ///直接保存到沙盒，等待程序下一次启动使用
             data?.write(toFile: jsonPath, atomically: true)
         }
+    }
+}
+
+/// matrix 监控代理
+extension AppDelegate: MatrixPluginListenerDelegate {
+    func onReport(_ issue: MatrixIssue!) {
+        
+    }
+    
+    func onInit(_ plugin: MatrixPluginProtocol!) {
+        
+    }
+    
+    func onStop(_ plugin: MatrixPluginProtocol!) {
+        
+    }
+    
+    func onStart(_ plugin: MatrixPluginProtocol!) {
+        
+    }
+    
+    func onDestroy(_ plugin: MatrixPluginProtocol!) {
+        
     }
 }
 
